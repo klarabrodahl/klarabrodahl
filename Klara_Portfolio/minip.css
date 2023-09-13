@@ -1,0 +1,1088 @@
+body {
+    background-color: #433F47;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        min-height: 400px;
+        /* Adjusted min-height for medium screens */
+        margin-top: 100px;
+        /* Adjusted top margin for medium screens */
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        min-height: 650px;
+        /* Adjusted min-height for smaller screens */
+        margin-top: 125px;
+        /* Adjusted top margin for smaller screens */
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        min-height: 700px;
+        /* Adjusted min-height for small screens */
+        margin-top: 150px;
+        /* Adjusted top margin for small screens */
+    }
+}
+
+
+
+
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background: transparent;
+}
+
+.header {
+    background-image: linear-gradient(to bottom right, darken(powderblue, 20%), powderblue);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    margin-top: -3§00px;
+    margin-left: -2px;
+
+}
+
+#curved-border {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.wave {
+    fill: #2C2B31;
+}
+
+article {
+    background-color: #2C2B31;
+    margin-top: -20px;
+    width: 99.7%;
+
+}
+
+#aboutme h1 {
+    font-size: 60px;
+    color: #E3D6B1;
+    /* Change to your preferred color */
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    /* Convert text to uppercase for emphasis */
+    letter-spacing: 2px;
+    /* Add letter spacing for a stylish look */
+    margin-top: 0px;
+    /* Adjust the negative margin to overlap */
+    /* Increase the top margin for spacing */
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Add a subtle text shadow for depth */
+    opacity: 0;
+    /* Initially make the text transparent */
+    animation: fadeIn 2s ease-in-out forwards;
+    /* Apply the fadeIn animation */
+
+}
+
+#aboutme {
+    background-color: transparent;
+    /* Background color matching your color scheme */
+    color: #ceab7e;
+    /* Text color */
+    padding: 10px;
+    text-align: center;
+    /* Align text to the left */
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    /* Adjust font size as needed */
+    line-height: 1.5;
+    /* Adjust line height for better readability */
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /* Start with transparency */
+        transform: translateY(-20px);
+        /* Start slightly above its final position */
+    }
+
+    100% {
+        opacity: 1;
+        /* End with full opacity */
+        transform: translateY(0);
+        /* Move to its final position */
+    }
+}
+
+.gradient-border img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+
+}
+
+.gradient-border {
+    --border-width: 50%;
+    margin-top: 125px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    font-family: Lato, sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+    background: #222;
+    border-radius: var(--border-width);
+}
+
+.gradient-border::after {
+    position: absolute;
+    content: "";
+
+    z-index: -1;
+    width: 310px;
+    height: 310px;
+    background: linear-gradient(60deg,
+            #3f393f,
+            #ceab7e,
+            #877053,
+            #6d8cad,
+            #8da8c4,
+            #ceab7e,
+            #ceab7e,
+            #877053);
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+}
+
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+
+.contacthyperlinks {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 40px;
+
+}
+
+.gradient img {
+    width: 50px;
+    /* Adjusted width */
+    height: 50px;
+    /* Adjusted height */
+    border-radius: 15px;
+    /* Adjusted border-radius for rounded rectangles */
+}
+
+.gradient {
+    --border-width: 50%;
+    margin-top: 25px;
+    /* Adjusted margin-top for centering */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    /* Adjusted width */
+    height: 50px;
+    /* Adjusted height */
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    /* Adjusted font size */
+    text-transform: uppercase;
+    color: white;
+    background: #222;
+    border-radius: var(--border-width);
+}
+
+.gradient::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 57px;
+    /* Adjusted width */
+    height: 57px;
+    /* Adjusted height */
+    background: linear-gradient(60deg,
+            #3f393f,
+            #ceab7e,
+            #877053,
+            #6d8cad,
+            #8da8c4,
+            #ceab7e,
+            #ceab7e,
+            #877053);
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: 15px;
+    /* Adjusted border-radius for rounded rectangles */
+    animation: moveGradient 4s alternate infinite;
+}
+
+
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+
+.topnav {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    /* Adjust left and right properties */
+    right: 30px;
+    width: calc(100% - 40px);
+    /* Adjust width to accommodate left and right margins */
+    z-index: 100;
+    background-color: #2C2B31;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style for the navigation links and form */
+.topnav a,
+.topnav form {
+    float: left;
+    margin-top: 0px;
+    /* Add some horizontal spacing between elements */
+}
+
+.topnav a {
+    color: #E3D6B1;
+    /* Headline color for links */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px 15px;
+    /* Adjust padding for a more compact header */
+    text-decoration: none;
+    font-size: 17px;
+    transition-duration: 0.4s;
+    border-radius: 15px;
+}
+
+
+
+/* Style for hover effect */
+.topnav a:hover {
+    background-color: #877053;
+    /* Accent color for hover effect */
+    color: #ffffff;
+    /* White text on hover */
+}
+
+
+
+
+article section {
+    width: 95.75%;
+    /* Make the section span the full width of the article */
+    min-height: 500px;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    border: 30px solid transparent;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    /* Vertical offset is 4px, no horizontal offset, blur radius is 4px */
+}
+
+
+.glow {
+    background-color: transparent;
+    color: #ceab7e;
+    border-radius: 10px;
+    display: inline-block;
+    /* Added to align elements horizontally */
+    margin: 0 10px;
+    /* Added to create space between elements */
+    transition: transform 0.4s ease-in-out, border 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.glow a {
+    display: block;
+    /* Make the entire section clickable */
+    text-decoration: none;
+    /* Remove underlines from the links */
+}
+
+/* Add the glowing effect using CSS animations */
+@keyframes glow {
+
+    0%,
+    100% {
+        border-color: transparent;
+        box-shadow: 0 0 10px rgba(206, 171, 126, 0.5);
+    }
+
+    50% {
+        border-color: #ceab7e;
+        box-shadow: 0 0 20px rgba(206, 171, 126, 1);
+    }
+}
+
+/* Apply the glowing animation with a delay and infinite loop */
+.glow:hover {
+    animation: glow 5s infinite;
+    transform: translateX(5px);
+}
+
+/* Add subtle movement using CSS transforms */
+.glow:hover {
+    transform: translateX(5px);
+}
+
+#project {
+    background-color: transparent;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    /* Add letter spacing for a stylish look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+#project h1 {
+    color: #8da8c4;
+    font-size: 40px;
+}
+
+#introduction {
+    background-color: #2C2B31;
+    color: #6d8cad;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    ;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    /* Add letter spacing for a stylish look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+#project h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+#skills {
+    background-color: transparent;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    /* Add letter spacing for a stylish look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+#skills h1 {
+    color: #E3D6B1;
+    font-size: 40px;
+}
+
+#skills h2 {
+    color: #ceab7e;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#skills p {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+
+.item {
+    width: 120px;
+    height: 200px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px;
+}
+
+.item2 {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px;
+}
+
+.item,
+.item2 {
+    padding: 10px;
+    background-color: #635854;
+    border: 2px solid #ceab7e;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px;
+    border-radius: 30px;
+    /* Add rounded corners */
+    text-align: center;
+    /* Center text content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+    transition: transform 0.5s ease-in-out, box-shadow 0.2s ease-in-out;
+    /* Add smooth transitions */
+}
+
+/* Add hover effect to scale and change shadow on hover */
+.item:hover,
+.item2:hover {
+    transform: scale(1.1);
+    /* Scale up slightly on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    /* Add a more pronounced shadow on hover */
+}
+
+
+
+
+
+
+
+
+
+footer {
+
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+/* Style for the button */
+#myBtn {
+    background-color: #8da8c4;
+    /* Use the headline color as the background color */
+    border: none;
+    color: #ffffff;
+    /* White text */
+    padding: 10px 20px;
+    /* Adjust padding for a more compact button */
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px;
+    /* Add some horizontal spacing */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    float: right;
+}
+
+/* Hover effect */
+#myBtn:hover {
+    background-color: #6d8cad;
+    /* Use the accent color for the hover effect */
+}
+
+
+
+
+/* Background for popup box */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content h1 {
+    color: #877053;
+}
+
+/* Content in popup box */
+.modal-content {
+    color: black;
+    background-color: #fefefe;
+    margin: 10% auto;
+    margin-bottom: 15%;
+    padding: 20px;
+    padding-top: 0px;
+    border: 4px solid #6d8cad;
+    border-radius: 15px;
+    width: 80%;
+    /* Set the width to a specific percentage of the screen width */
+    max-width: 400px;
+    /* Set a maximum width if needed */
+    
+    /* Set a maximum height minus 2 * 20px padding */
+    overflow: auto;
+    /* Add overflow to scroll content if it exceeds the max height */
+}
+
+/* Style for form fields and labels */
+#contactForm label {
+    display: block;
+
+    font-size: 16px;
+    color: #333;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#contactForm textarea {
+    resize: vertical;
+    /* Allow vertical resizing of the textarea */
+}
+
+#contactForm input[type="submit"] {
+    background-color: #6d8cad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Style for form fields on focus */
+#contactForm input[type="text"]:focus,
+#contactForm input[type="email"]:focus,
+#contactForm textarea:focus {
+    border-color: #6d8cad;
+    outline: none;
+    /* Remove the default focus outline */
+}
+
+/* Add some spacing for the message div */
+.message {
+    margin-top: 15px;
+    color: #6d8cad;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#contacttext h1 {
+    text-align: left;
+    color: #E3D6B1;
+    font-size: 80px;
+    animation: glowText 2s infinite; /* Apply the glowing animation to the text */
+}
+
+/* Add the glowing effect using CSS animations */
+@keyframes glowText {
+    0% {
+        color: #E3D6B1; /* Start with the original color */
+        transform: translateY(0);
+    }
+
+    50% {
+        color: #ceab7e; /* Change color for the glow effect */
+        transform: translateY(-5px); /* Glow up */
+    }
+
+    100% {
+        color: #E3D6B1; /* Return to the original color */
+        transform: translateY(0);
+    }
+}
+
+.contact{
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: space-between; /* Spread the sections evenly horizontally */
+    background-color: transparent;
+    text-align: center;
+    min-height: 500px;
+    font-family: 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    /* Add letter spacing for a stylish look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 100px;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+
+
+}   
+
+#contacttext, #contactform2 {
+    flex: 1; /* Allow each section to grow equally to fill available space */
+    width: calc(50% - 10px); /* Set the width to 50% of the container width with some margin between them */
+    margin: 0 5px; /* Add some margin between the sections */
+}
+
+#contactform2 {
+    background-color: #2C2B31;
+    color: #E3D6B1; /* Set the text color to match the glow effect */
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.4s ease-in-out, border 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+padding: 20px;
+}
+
+#contactform2 a {
+    display: block;
+    text-decoration: none;
+}
+
+/* Add the glowing effect using CSS animations */
+@keyframes glow {
+    0%, 100% {
+        border-color: transparent;
+        box-shadow: 0 0 10px #2C2B31;
+    }
+
+    50% {
+        border-color: #2C2B31;
+        box-shadow: 0 0 20px #2C2B31;
+    }
+}
+
+/* Apply the glowing animation with a delay and infinite loop */
+#contactform2:hover {
+    animation: glow 5s infinite;
+    transform: translateX(5px);
+}
+
+/* Add subtle movement using CSS transforms */
+#contactform2:hover {
+    transform: translateX(5px);
+}
+
+/* Style for form fields and labels */
+#contactForm3 label {
+    display: block;
+
+    font-size: 16px;
+    color: #ceab7e;
+}
+
+#contactForm3 input[type="text"],
+#contactForm3 input[type="email"],
+#contactForm3 textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#contactForm3 textarea {
+    resize: vertical;
+    /* Allow vertical resizing of the textarea */
+}
+
+#contactForm3 input[type="submit"] {
+    background-color: #6d8cad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Style for form fields on focus */
+#contactForm3 input[type="text"]:focus,
+#contactForm3 input[type="email"]:focus,
+#contactForm3 textarea:focus {
+    border-color: #6d8cad;
+    outline: none;
+    /* Remove the default focus outline */
+}
+
+/* Add some spacing for the message div */
+.message {
+    margin-top: 15px;
+    color: #6d8cad;
+}
+
+
+/* Media Query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center sections horizontally */
+    }
+
+    #contacttext, #contactform2 {
+        width: 100%; /* Full width for each section */
+        margin: 10px 0; /* Add margin to separate sections */
+    }
+}
+
+
+#timeline {
+    background-color: transparent;
+    text-align: center;
+
+    font-family: 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    /* Add letter spacing for a stylish look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#timeline h1 {
+    text-align: center;
+    color: #E3D6B1;
+    font-size: 40px;
+
+}
+
+.tmln {
+    --bdc: #E3D6B1;
+    --bdc-a: #C0A179;
+    --bdc-h: white;
+    --bgc: #2C2B31;
+    --bdrs: 0.25rem;
+    --bdw: 2px;
+    --bullet-bdrs: 50%;
+    --bullet-sz: 1.2em;
+    --bullet-sz-a: 6px;
+    --c: hsl(200, 40%, 1%);
+    --box-item-bdrs: 0.25rem;
+    --box-item-bgc: #827060;
+    --box-item-dark-bgc: #433F47;
+    --box-item-dark-c: hsl(200, 40%, 95%);
+    --box-item-lght-bgc: #635854;
+    --gap: 1rem;
+    --scroll-bgc: #433F47;
+    --scroll-tmb-bgc: #C0A179;
+    --scroll-w: 10px;
+    --trsdu: .3s;
+    --trstf: ease-out;
+
+    /* Modifier-specific properties */
+    --sl-mbe: 2em;
+    --bi-miw: 85%;
+    --bi-miw-tablet: 30%;
+
+    background-color: var(--bgc, transparent);
+    border-radius: var(--bdrs, 0);
+    color: white;
+    font-family: var(--ff, ui-sans-serif, system-ui, sans-serif);
+    padding-block: var(--gap) 0;
+    padding-bottom: var(--gap);
+    /* Safari */
+    padding-top: var(--gap);
+    /* Safari */
+    width: var(--w, 100%);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tmln:not(.tmln--hr) {
+    padding-inline-start: var(--gap);
+}
+
+.tmln__header {
+    margin-block-start: 0;
+}
+
+.tmln__item {
+    color: inherit;
+    display: block;
+    margin-block-end: var(--mbe, var(--gap)/2);
+    padding-inline-start: calc(var(--gap) + var(--bullet-sz));
+    position: relative;
+    text-decoration: none;
+}
+
+/* Circle */
+.tmln__item::after {
+    border: var(--bdw) solid var(--bdc);
+    border-radius: var(--bullet-bdrs);
+    box-sizing: border-box;
+    content: "";
+    block-size: var(--bullet-sz);
+    inline-size: var(--bullet-sz);
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    position: absolute;
+    transition: all var(--trsdu) var(--trstf);
+}
+
+/* Line */
+.tmln__item::before {
+    background-color: var(--bdc);
+    content: "";
+    block-size: calc(100% + var(--mbe, var(--gap)) - var(--bullet-sz));
+    inline-size: var(--bdw);
+    inset-block-start: var(--bullet-sz);
+    inset-inline-start: calc((var(--bullet-sz) - var(--bdw)) / 2);
+    position: absolute;
+}
+
+/* Hide last line */
+.tmln:not(.tmln--hr) .tmln__item:last-child::before {
+    display: none;
+}
+
+.tmln__item-headline {
+    margin-block: 0;
+}
+
+.tmln__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-block: 0 var(--gap);
+    padding-inline: 0;
+}
+
+/* 
+====================
+Modifiers and States
+====================
+*/
+
+/* Active Circle */
+.tmln__item--active::after,
+.tmln__item--bg-lght::after,
+.tmln__item--bg-dark::after {
+    --bdc: var(--bdc-a);
+    box-shadow: 0 0 0 calc(var(--bullet-sz-a) - var(--bdw)) var(--bgc, #FFF), 0 0 0 var(--bullet-sz-a) var(--bdc-a);
+    background-color: var(--bdc-a);
+}
+
+/* :focus, :focus-within, :focus-visible */
+.tmln__item--active:focus-visible::after,
+.tmln__item--active:focus-within::after {
+    box-shadow: 0 0 0 calc(var(--bullet-sz-a) - var(--bdw)) var(--bdc-h, #FFF), 0 0 0 var(--bullet-sz-a) var(--bdc);
+}
+
+.tmln__item--active [data-title],
+.tmln__item:focus-visible [data-title] {
+    text-shadow: 0.75px 0px 0px currentColor;
+}
+
+.tmln__item:not(.tmln__item--active):focus-visible::after,
+.tmln__item:not(.tmln__item--active):focus-within::after {
+    background-color: var(--bdc-h);
+    box-shadow: 0 0 0 calc(var(--bullet-sz-a) - var(--bdw)) var(--bgc, #FFF), 0 0 0 var(--bullet-sz-a) var(--bdc);
+}
+
+.tmln--box .tmln__item:focus-within {
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.tmln__item:focus-visible {
+    outline: none;
+}
+
+.tmln__item:focus-visible [data-title],
+.tmln__item:focus-within a {
+    outline: 1px dotted currentColor;
+    outline-offset: 6px;
+}
+
+/* Horizontal */
+.tmln--hr .tmln__header {
+    margin-inline-start: var(--gap);
+}
+
+.tmln--hr .tmln__list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-block-start: var(--bullet-sz-a);
+    /* Add room for box-shadow transition in horizontal mode */
+    padding-inline-start: var(--gap);
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+}
+
+.tmln--hr .tmln__item {
+    align-self: flex-start;
+    margin-block-end: 0;
+    min-width: var(--miw, 6rem);
+    padding-block-start: calc(var(--bullet-sz) + var(--gap));
+    padding-inline-end: var(--gap);
+    padding-inline-start: 0;
+    scroll-snap-align: start;
+    scroll-margin-inline-start: var(--gap);
+    scroll-margin-left: var(--gap);
+    /* Safari */
+}
+
+.tmln--hr .tmln__item::before {
+    block-size: var(--bdw);
+    inline-size: calc(100% - var(--bullet-sz));
+    inset-block-start: calc((var(--bullet-sz) - var(--bdw)) / 2);
+    inset-inline-start: calc(0% + var(--bullet-sz));
+}
+
+/* Item Box */
+.tmln--box .tmln__item {
+    background-color: var(--box-item-bgc);
+    border-radius: var(--box-item-bdrs);
+    margin-block-end: 0;
+    margin-inline-start: calc(var(--bullet-sz) + var(--gap)/2);
+    padding: var(--gap);
+    transition: box-shadow var(--trsdu) var(--trstf);
+}
+
+.tmln--box .tmln__item [data-title] {
+    display: block;
+    font-size: small;
+    text-transform: uppercase;
+}
+
+.tmln--box:not(.tmln--hr) .tmln__item::after {
+    inset-inline-start: calc(0px - var(--bullet-sz) - var(--gap));
+}
+
+.tmln--box:not(.tmln--hr) .tmln__item::before {
+    inset-inline-start: calc(0px - var(--gap) - ((var(--bullet-sz) + var(--bdw)) / 2));
+}
+
+.tmln--box .tmln__item--bg-dark {
+    background-color: var(--box-item-dark-bgc);
+    color: var(--box-item-dark-c);
+}
+
+.tmln--box:not(.tmln--hr) .tmln__item--bg-dark a {
+    outline-color: var(--box-item-dark-bgc);
+}
+
+.tmln--box .tmln__item--bg-lght {
+    background-color: var(--box-item-lght-bgc);
+}
+
+.tmln--box .tmln__list {
+    gap: var(--gap);
+    padding-inline-end: var(--gap);
+}
+
+/* Item Box AND Horizontal */
+.tmln--box.tmln--hr .tmln__item {
+    --miw: var(--bi-miw);
+    margin-block-end: 0;
+    margin-block-start: calc(var(--bullet-sz) + var(--gap));
+    margin-inline-start: 0;
+}
+
+.tmln--box.tmln--hr .tmln__item::after {
+    inset-block-start: calc(0px - var(--bullet-sz) - var(--gap));
+}
+
+.tmln--box.tmln--hr .tmln__item::before {
+    inset-block-start: calc(0px - var(--gap) - ((var(--bullet-sz) + var(--bdw)) / 2));
+    inline-size: calc(100% - var(--bullet-sz) + var(--gap));
+}
+
+/* Single Line, center text to bullet */
+.tmln--sl .tmln__item {
+    --mbe: var(--sl-mbe, var(--gap));
+    line-height: var(--bullet-sz);
+}
+
+/* Media Queries */
+
+
+
+@media (min-width: 768px) {
+    .tmln--box.tmln--hr .tmln__item {
+        --miw: var(--bi-miw-tablet);
+    }
+}
+
+/* Show scrollbars on devices without touch  */
+@media (pointer: fine) {
+    .tmln--hr {
+        /* Add space between scrollbar and bottom of container */
+        padding-block-end: var(--gap);
+    }
+
+    .tmln--hr .tmln__list {
+        scrollbar-width: var(--scroll-w);
+    }
+
+    .tmln--hr .tmln__list {
+        scrollbar-color: var(--scroll-tmb-bgc) var(--scroll-bgc);
+        scrollbar-width: thin;
+    }
+
+    .tmln--hr .tmln__list::-webkit-scrollbar {
+        background: var(--scroll-bgc);
+        height: var(--scroll-w);
+        width: var(--scroll-w);
+    }
+
+    .tmln--hr .tmln__list::-webkit-scrollbar-button {
+        background: var(--bgc);
+    }
+
+    .tmln--hr .tmln__list::-webkit-scrollbar-thumb {
+        /* Hide scrollbar-button-area, so scrollbar appears smaller than container */
+        background-color: var(--scroll-tmb-bgc);
+    }
+}
